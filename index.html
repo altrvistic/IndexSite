@@ -12,9 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   
     <script>
-        document.querySelectorAll('details').forEach((D,_,A)=>{
-        D.ontoggle =_=>{ if(D.open) A.forEach(d =>{ if(d!=D) d.open=false })}
-        })
+        function closeAllDetails() {
+        const detailsElements = document.querySelectorAll('details');
+
+        detailsElements.forEach(details => {
+            if (details.open) {
+            details.removeAttribute('open');
+            }
+        });
+        }
     </script>
 </head>
   
@@ -330,7 +336,7 @@
                             </div>
 
                             <div class="feel">
-                                <p> heartbreak </p>
+                                <p> heartbroken </p>
                             </div>
 
                             <div class="submit">
@@ -427,7 +433,7 @@
                             </div>
 
                             <div class="feel">
-                                <p> heartbreak </p>
+                                <p> heartbroken </p>
                             </div>
 
                             <div class="submit">
@@ -605,7 +611,7 @@
                             </div>
 
                             <div class="feel">
-                                <p> connection, depressed </p>
+                                <p> like you could use some company </p>
                             </div>
 
                             <div class="submit">
@@ -684,6 +690,11 @@
 
             <footer>
                 <p> Made by Jade Sun. Last updated Jan 2025.</p>
+                <div class="button-container">
+                <div class="button" onclick="closeAllDetails()"> 
+                    <p> CLOSE ALL </p>
+                </div>
+                </div>
             </footer>
         </div>
        
