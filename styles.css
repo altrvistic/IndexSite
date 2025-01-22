@@ -19,7 +19,7 @@ body {
 
 hr {
     border: 1px solid #1A1A1A;
-    margin-top: 5px;
+    margin-top: 0px;
     margin-bottom: 0px;
     width: 100vw;
 }
@@ -62,14 +62,15 @@ a:link{
 }
 
 .button {
-    border: 1px solid black;
+    border: 2px solid black;
     text-decoration: none;
     padding:10px;
     font-size: max(1.2vw, 14px);
+    background-color: #e1ccd2;
 }
 
 .button:hover {
-    background-color:rgb(167, 144, 162) ;
+    background-color: #c09fa8 ;
     text-decoration-color: #f6f3ea;
     cursor:pointer;
 }
@@ -97,7 +98,7 @@ a:link{
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: #f6f3ea;
+    background-color: #e1ccd2;
 }
 
 .categories h2 {
@@ -113,7 +114,8 @@ a:link{
     grid-template-columns: 1.5fr 5fr 3fr 1fr;
     grid-gap: 40px;
     font-size: max(1.2vw, 10px);
-    ;
+    position: sticky;
+
 }
 
 .about-grid-container {
@@ -129,7 +131,8 @@ a:link{
 .grid-container:hover {
     font-weight: bold;
     cursor: pointer;
-    background-color: rgb(167, 144, 162);
+    background-color: #c09fa8;
+
     
 }
 
@@ -145,7 +148,9 @@ a:link{
 
 .collapse-text p{
     margin:0;
+    color: #1A1A1A;
 }
+
 details ::marker{ 
     display:none; 
 } 
@@ -155,25 +160,14 @@ summary{
 } 
 
 
-/* .collapse-content{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 20px;
-    align-items: top;
-    justify-items: center;
-    padding-left: 1.5vw;
-} */
-
 .collapse-content{
     display: grid;
     grid-template-columns: 1.5fr 5fr 3fr 1fr;
     grid-gap: 20px;
     grid-column-start: 2;
-    align-items: top;
     justify-items: center;
-    margin:0px 50px 0px 50px;
-
+    padding:0px 50px 0px 50px;
+    background-color: #e1ccd2;
 }
 
 
@@ -210,7 +204,7 @@ footer p {
     width: 100%;
     position: fixed;
     bottom: 0;
-    margin-top: 100px;
+    margin-top: 200px;
     font-size: max(1vw, 6px);
 }
 
