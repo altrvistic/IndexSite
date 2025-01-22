@@ -62,7 +62,7 @@ a:link{
 }
 
 .button {
-    border: 2px solid black;
+    border: none;
     text-decoration: none;
     padding:10px;
     font-size: max(1.2vw, 14px);
@@ -73,6 +73,8 @@ a:link{
     background-color: #c09fa8 ;
     text-decoration-color: #f6f3ea;
     cursor:pointer;
+    border: 2px solid black;
+
 }
 
 .top-section {
