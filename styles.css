@@ -211,7 +211,7 @@ footer p {
     position: fixed;
     bottom: 0;
     margin-top: 100px;
-    font-size: max(1vw, 7px);
+    font-size: max(1vw, 6px);
 }
 
 .about {
