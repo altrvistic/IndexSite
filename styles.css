@@ -1,37 +1,56 @@
 body {
     font-family: "Roboto Mono", 'Courier New', Courier, monospace;
-    margin: 0px 40px 0px 40px;
+    padding: 8vw 1vw 1vw 0vw;
     background-color: #f6f3ea;
-}
-
-hr {
-    border: 1px solid #1A1A1A;
-    margin: 5px;
+    min-height: 100vh;
+    width: 100vw;
+    justify-self: center;
+    margin: 0;
 }
 
 .roboto-mono-font {
-  font-family: "Roboto Mono", serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-  color:#1A1A1A;
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color:#1A1A1A;
+  }
+
+
+hr {
+    border: 1px solid #1A1A1A;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    width: 100vw;
 }
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 50px;
     align-items: center;
+    justify-self: center;
+    width: 100vw;
+    height: 15vh;
+    background-color: #f6f3ea;
 }
 
 .heading {
-    font-size: max(1.2vw, 20px);
+    font-size: max(1.2vw, 12px);
+    margin: 50px 50px;
 }
 
+.index-contents {
+    position: relative;
+    top: 50px;
+}
+
+.rectangle {
+    height:1vh;
+}
 .button-container {
     display: flex;
-    margin: 20px;
+    margin: 20px 50px;
     flex-direction: row;
     gap: 20px;
     
@@ -49,13 +68,33 @@ a:link{
     font-size: max(1.2vw, 14px);
 }
 
+.top-section {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top:0px;
+    z-index: 2;
+}
+
+.button:hover {
+    background-color:rgb(167, 144, 162) ;
+    text-decoration-color: #f6f3ea;
+}
 .categories {
     text-align: left;
     display: grid;
-    grid-template-columns: 150px 55% 250px 50%;
+    margin:0px 50px 0px 50px;
+    grid-template-columns: 1.5fr 5fr 3fr 1fr;
     grid-gap: 20px;
-    margin-left: 5px;
-    font-size: max(1vw, 12px);
+    font-size: max(1vw, 8px);
+    
+}
+
+.categories-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #f6f3ea;
 }
 
 .categories h2 {
@@ -66,52 +105,101 @@ a:link{
 
 .grid-container {
     text-align: left;
+    padding:0px 50px 0px 50px;
     display: grid;
-    grid-template-columns: 150px 55% 250px 50%;
-    grid-gap: 20px;
-    margin-left: 5px;
-    align-items: center;
+    grid-template-columns: 1.5fr 5fr 3fr 1fr;
+    grid-gap: 40px;
+    font-size: max(1.2vw, 10px);
+    ;
 }
 
-.grid-container p{
-    margin: 10px;
+.about-grid-container {
+    text-align: left;
+    padding:0px 50px 0px 50px;
+    display: grid;
+    grid-template-columns: 1.5fr 5fr 3fr 1fr;
+    grid-gap: 20px;
+    font-size: max(1.2vw, 10px);
+    ;
 }
+
 .grid-container:hover {
     font-weight: bold;
     cursor: pointer;
+    background-color: rgb(167, 144, 162);
+    
 }
 
 .collapse-text {
-    font-size: max(1.3vw, 14px);
-    width: 55%;
+    font-size: max(1.3vw, 10px);
     grid-column-start: 2;
     grid-column-end: 3;
-    padding-right: 100px;
     padding-bottom: 50px;
     padding-top: 50px;
+    margin-right: 50px;
     line-height: 150%;
 }
 
+.collapse-text p{
+    margin:0;
+}
 details ::marker{ 
     display:none; 
 } 
 
 summary{ 
-    list-style: none 
+    list-style: none;
 } 
 
-.collapse-content{
+
+/* .collapse-content{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 20px;
-    margin-left: 170px;
     align-items: top;
     justify-items: center;
+    padding-left: 1.5vw;
+} */
+
+.collapse-content{
+    display: grid;
+    grid-template-columns: 1.5fr 5fr 3fr 1fr;
+    grid-gap: 20px;
+    grid-column-start: 2;
+    align-items: top;
+    justify-items: center;
+    margin:0px 50px 0px 50px;
+
 }
+
+
 
 .music {
-    display: flex;
-    flex-direction: column;
+    grid-column: span 2;
+    grid-column-start: 3;
+    position: sticky;
 }
 
+.about-text {
+    grid-column: span 2;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+
+footer {
+    text-align: center;
+    width: 100%;
+    font-size: max(1vw, 7px);
+    margin-top: 100px;
+}
+
+.footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: max(1vw, 7px);
+    margin-top: 100px;
+}

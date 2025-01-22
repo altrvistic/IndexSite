@@ -10,187 +10,682 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-  </head>
   
+    <script>
+        document.querySelectorAll('details').forEach((D,_,A)=>{
+        D.ontoggle =_=>{ if(D.open) A.forEach(d =>{ if(d!=D) d.open=false })}
+        })
+    </script>
+</head>
+  
+
 
   <body>
 
-    <header> 
+    <div class="top-section">
+        <header> 
         
-        <div class="heading">
-        <h1> MUSIC TO MY EARS </h1>
-        </div>
-
-        <div class="button-container">
-
-            <div class="button">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfiVtVZt4HPegeVh7q7cVl3D82hhVZ_UiC73Iixm3N_gQfWyA/viewform?usp=sharing"> ABOUT </a>
+            <div class="heading">
+            <h1> MUSIC TO MY EARS </h1>
             </div>
 
-            <div class="button">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfiVtVZt4HPegeVh7q7cVl3D82hhVZ_UiC73Iixm3N_gQfWyA/viewform?usp=sharing"> SUBMIT </a>
-            </div>
+            <div class="button-container">
 
-        </div>
-        
-    </header>
-
-    <hr>
-
-    <div class="categories">
-        <div class="date">
-            <h2> DATE </h2>
-       </div>
-
-        <div class="title">
-            <h2> TITLE, ARTIST </h2>
-        </div>
-
-        <div class="feel">
-            <h2> TO FEEL </h2>
-        </div>
-
-        <div class="submit">
-            <h2> FROM </h2>
-       </div>
-
-    </div> 
-
-    <hr>
-
-    <div class="index-entry">
-        <details>
-            <summary>
-                
-                <div class="grid-container">
-
-                    <div class="date">
-                        <p> Jan 11 2025 </p>
-                    </div>
-                
-                    <div class="title">
-                        <p>  Like a Tattoo, Sade </p>
-                    </div>
-
-                    <div class="feel">
-                        <p> nostalgia, comfort </p>
-                    </div>
-
-                    <div class="submit">
-                        <p> anon </p>
-                    </div>
-
-                </div> 
-
-            </summary>
-
-            <div class="collapse-content">
-
-                <div class="collapse-text">
-                    <p>
-                        "My mom listened to it a lot when she was taking care of me when I was, like, a little child. So it just reminds me of her comfort."
-                    </p>
+                <div class="button">
+                    <a href="about.html"> ABOUT </a>
                 </div>
-                
-                <div class="music">
-                    <iframe style="padding: 50px 0px 0px 0px" style="border-radius:12px" height="250px" width="333.33px" src="https://www.youtube.com/embed/Xl-GufZCQoo?si=F9S-UmR2fbveZzoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <iframe style="padding-top: 30px; padding-bottom: 100px; border-radius:12px" src="https://open.spotify.com/embed/track/4PEGwWH4tL6H7dGl4uVSPg?utm_source=generator" width="333.33px" height="100px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+                <div class="button">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfiVtVZt4HPegeVh7q7cVl3D82hhVZ_UiC73Iixm3N_gQfWyA/viewform?usp=sharing"> SUBMIT </a>
                 </div>
 
             </div>
-        </details>
+            
+        </header>
+
+        <div class="categories-wrapper">
+            <hr>
+
+            <div class="categories">
+                <div class="date">
+                    <h2> DATE </h2>
+            </div>
+
+                <div class="title">
+                    <h2> TITLE, ARTIST </h2>
+                </div>
+
+                <div class="feel">
+                    <h2> FEELING </h2>
+                </div>
+
+                <div class="submit">
+                    <h2> FROM </h2>
+            </div>
+
+            </div> 
+
+            <hr>
+         </div>
+
     </div>
 
-    <div class="index-entry">
-        <details>
-            <summary>
-                
-                <div class="grid-container">
+        <div class="index-contents">
+            <rectangle></rectangle>
 
-                    <div class="date">
-                        <p> Jan 11 2025 </p>
+            <!-- everyone has someone -->
+            <div class="index-entry">
+                <details>
+                    <summary>
+
+                        <div class="grid-container">
+
+                            <div class="date">
+                                <p> Jan 21 2025 </p>
+                            </div>
+                        
+                            <div class="title">
+                                <p> Everybody Loves Somebody, Dean Martin </p>
+                            </div>
+
+                            <div class="feel">
+                                <p> forever alone </p>
+                            </div>
+
+                            <div class="submit">
+                                <p> anon </p>
+                            </div>
+
+                        </div> 
+
+                    </summary>
+
+            
+                    <div class="collapse-content">
+
+                        <div class="collapse-text">
+                            <p>
+                                "It’s old. And everytime I listen to it — it’s about how everyone has someone as their soulmate. And it reminds me of how I have no one. So I’m just kind of like, oh, that’s so cute. I don’t know how this feels, and I probably never will.
+                                "
+                            </p>
+                        </div>
+                        
+                        <div class="music">
+                            <iframe style="padding: 50px 0px 0px 0px" style="border-radius:12px" height="150vw" width="250vw" src="https://www.youtube.com/embed/Mf9cBjivXLQ?si=BxvArRa6-AeiIElH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe style="padding-top: 30px; padding-bottom: 100px; border-radius:12px" src="https://open.spotify.com/embed/track/5I9sHwLDX28tLtzVgKLtpr?utm_source=generator" width="250vw" height="100vw" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+
                     </div>
                 
-                    <div class="title">
-                        <p>  童话，刘大拿/刘兆宇/AFMC黑子 </p>
-                    </div>
-
-                    <div class="feel">
-                        <p> connection, comfort </p>
-                    </div>
-
-                    <div class="submit">
-                        <p> anon </p>
-                    </div>
-
-                </div> 
-
-            </summary>
-
-            <div class="collapse-content">
-
-                <div class="collapse-text">
-                    <p>
-                        "当时我在上TOFL课，然后每天都熬夜写作业啊，然后写完作业就还要跟我一个同学聊天。他当时有点depression，让后我当时也因为这事情心情不好。然后我们经常就打电话。然后发现这首歌呢，感觉他就是很治愈。他跟我们俩的经历有点相似。所以我们就经常一起听这个歌。然后到后来呢，听的太久了。每次在听这个歌真的想的当时我们聊天的种种话面。"                    
-                    </p>
-                    <p>
-                        "At the time I was taking a TOFL class and staying up every night to do homework, and after doing homework I would talk to my classmate. He was kind of depressed back then, and because of this I was also unhappy. We would often call each other. And then we discovered this song that we felt was very healing—it had many similarities to our own experience. Because of that, we would often listen to it together. After everything was over, it felt like I had listened to it too many times. Everytime I hear this song now I recall the things we talked about."
-                    </p>
-                </div>
-                
-                <div class="music">
-                    <iframe style="padding: 50px 0px 0px 0px" style="border-radius:12px" height="250px" width="333.33px" src="https://www.youtube.com/embed/y43gfW-nGcc?si=QoQR0zA24nEKFgDb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <iframe style="padding-top: 30px; padding-bottom: 100px" src="https://open.spotify.com/embed/track/3LhZ5z6Y9FJV6GSetJj4Kg?utm_source=generator" width="333.33px" height="100px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-
+                </details>
             </div>
-        </details>
-    </div>
 
-    <div class="index-entry">
-        <details>
-            <summary>
+            <!-- mine all mine -->
+            <div class="index-entry">
+                <details>
+                    <summary>
 
-                <div class="grid-container">
+                        <div class="grid-container">
 
-                    <div class="date">
-                        <p> Jan 11 2025 </p>
+                            <div class="date">
+                                <p> Jan 21 2025 </p>
+                            </div>
+                        
+                            <div class="title">
+                                <p> My Love Mine All Mine, Mitski </p>
+                            </div>
+
+                            <div class="feel">
+                                <p> in mourning over future pet-death </p>
+                            </div>
+
+                            <div class="submit">
+                                <p> anon </p>
+                            </div>
+
+                        </div> 
+
+                    </summary>
+
+            
+                    <div class="collapse-content">
+
+                        <div class="collapse-text">
+                            <p>
+                                "It reminds me of my dog. But the sad part is, it reminds me of the future of when my dog will die and how I will feel in the future when she’s dead—I’ll be feeling like the song. So everytime I listen to the song, I’m like 'she’s going to die!'
+                                "
+                            </p>
+                        </div>
+                        
+                        <div class="music">
+                            <iframe style="padding: 50px 0px 0px 0px" style="border-radius:12px" height="150vw" width="250vw" src="https://www.youtube.com/embed/CwGbMYLjIpQ?si=iFfRUvJ4mP2LRM3L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe style="padding-top: 30px; padding-bottom: 100px; border-radius:12px" src="https://open.spotify.com/embed/track/3vkCueOmm7xQDoJ17W1Pm3?utm_source=generator" width="250vw" height="100vw" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+
                     </div>
                 
-                    <div class="title">
-                        <p> Once More to See You, Mitski </p>
-                    </div>
-
-                    <div class="feel">
-                        <p> like yourself, comfort </p>
-                    </div>
-
-                    <div class="submit">
-                        <p> anon </p>
-                    </div>
-
-                </div> 
-
-            </summary>
-
-            <div class="collapse-content">
-
-                <div class="collapse-text">
-                    <p>
-                        “I feel like throughout my life—no matter what age I’ve been and what’s going on in my life— ever since I discovered this song, it’s one song that will always soothe me and bring me comfort, and make me feel like myself. Because I feel like I associate that song with who I am in my core—that’s something really meaningful because it always grounds me. And it sounds good no matter how many times I listen to it, and it’s been my top song on Spotify for like five years in a row. But I still, like, love it.”
-                    </p>
-                </div>
-                
-                <div class="music">
-                    <iframe style="padding: 50px 0px 0px 0px" style="border-radius:12px" height="250px" width="333.33px" src="https://www.youtube.com/embed/WFLLdv0uCK8?si=4M7PGJLj5xAaY_dg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <iframe style="padding-top: 30px; padding-bottom: 100px" style="border-radius:12px" src="https://open.spotify.com/embed/track/3NE5nGm06kB8QQbQqJaOke?utm_source=generator&theme=0" width="333.33px" height="100px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-
+                </details>
             </div>
-        </details>
-    </div>
 
+            <!-- yuki -->
+            <div class="index-entry">
+                <details>
+                    <summary>
 
+                        <div class="grid-container">
 
+                            <div class="date">
+                                <p> Jan 13 2025 </p>
+                            </div>
+                        
+                            <div class="title">
+                                <p> Michi, Utada Hikara
+                                </p>
+                            </div>
+
+                            <div class="feel">
+                                <p> introspective, nostalgia </p>
+                            </div>
+
+                            <div class="submit">
+                                <p> anon </p>
+                            </div>
+
+                        </div> 
+
+                    </summary>
+
+            
+                    <div class="collapse-content">
+
+                        <div class="collapse-text">
+                            <p>
+                                "It's the song that my dad played for me when I was little — but it was just a song for me, back then. But then I rediscovered that song, like, I don't know, six years later, and now she's my favorite artist. So that brings up my dad's memory and everything."
+                            </p>
+                        </div>
+                        
+                        <div class="music">
+                            <iframe style="padding: 50px 0px 0px 0px" style="border-radius:12px" height="150vw" width="250vw" src="https://www.youtube.com/embed/p0WGysgT4rA?si=0WlG4zjPH0DiVQA-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe style="padding-top: 30px; padding-bottom: 100px; border-radius:12px" src="https://open.spotify.com/embed/track/4nYtqZDscX8TLvR4p0ON1s?utm_source=generator" width="250vw" height="100vw" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+
+                    </div>
+                
+                </details>
+            </div>
+
+            <!-- olivia -->
+            <div class="index-entry">
+                <details>
+                    <summary>
+
+                        <div class="grid-container">
+
+                            <div class="date">
+                                <p> Jan 13 2025 </p>
+                            </div>
+                        
+                            <div class="title">
+                                <p> Blackbird, The Beatles
+                                </p>
+                            </div>
+
+                            <div class="feel">
+                                <p> childhood nostalgia </p>
+                            </div>
+
+                            <div class="submit">
+                                <p> anon </p>
+                            </div>
+
+                        </div> 
+
+                    </summary>
+
+            
+                    <div class="collapse-content">
+
+                        <div class="collapse-text">
+                            <p>
+                                "My mom would always sing it to me as a lullaby, and it reminds me of the times when I was really young, and my parents would read stories to me before bed and sing a lullaby. And that was like the lullaby that my mom sang the most often. And I also think the meaning behind it was really signigicant, in terms of what the original artist was thinking. Um, it just reminds me of a lot about my childhood, and feeling free and safe."
+                            </p>
+                        </div>
+                        
+                        <div class="music">
+                            <iframe style="padding: 50px 0px 0px 0px" style="border-radius:12px" height="150vw" width="250vw" src="https://www.youtube.com/embed/7epRPz0LGPE?si=guCErMK4vUMhEewe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe style="padding-top: 30px; padding-bottom: 100px; border-radius:12px" src="https://open.spotify.com/embed/track/5jgFfDIR6FR0gvlA56Nakr?utm_source=generator" width="250vw" height="100vw" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+
+                    </div>
+                
+                </details>
+            </div>
+
+            <!-- you are my sunshine -->
+            <div class="index-entry">
+                <details>
+                    <summary>
+
+                        <div class="grid-container">
+
+                            <div class="date">
+                                <p> Jan 11 2025 </p>
+                            </div>
+                        
+                            <div class="title">
+                                <p> You Are My Sunshine, Elizabeth Mitchell
+                                </p>
+                            </div>
+
+                            <div class="feel">
+                                <p> confident </p>
+                            </div>
+
+                            <div class="submit">
+                                <p> anon </p>
+                            </div>
+
+                        </div> 
+
+                    </summary>
+
+            
+                    <div class="collapse-content">
+
+                        <div class="collapse-text">
+                            <p>
+                                "When I was little, my mom would always sing it to me. When I went to preschool—I have a very vivid memory—I was walking out of the bathroom, finishing up, and my preschool teacher began to sing to me: “you are my sunshine, my only sunshine, you make me happy…” 
+                                "
+                            </p>
+                            <br>
+                            <p>
+                                "Earlier this year, we had a sub. He asked me, “wow, your last name’s ‘Sun.’ Has anyone ever sung to you ‘Sunshine’ by the Beatles?” Or something like that. And I was like, no, but, you know what my preschool teacher once sang? “You are my sunshine, my only sunshine…” And ever since then I remembered that song as my song. Because my last name is “Sun,” so it really resonates with me. But as I grew older and heard the real meaning of the lyrics behind the song, it made me really sad. But I just feel like it's such a cute and beautiful song that I will always remember in my heart forever.
+                                "
+                            </p>
+                        </div>
+                        
+                        <div class="music">
+                            <iframe style="padding: 50px 0px 0px 0px" style="border-radius:12px" height="150vw" width="250vw" src="https://www.youtube.com/embed/5TUzB2fBUpY?si=bxV-gpAb0SbOKRSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe style="padding-top: 30px; padding-bottom: 100px; border-radius:12px" src="https://open.spotify.com/embed/track/10CsMKlayFJOj4Lai9tAvm?utm_source=generator" width="250vw" height="100vw" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+
+                    </div>
+                
+                </details>
+            </div>
+
+            <!-- gidle i do -->
+            <div class="index-entry">
+                <details>
+                    <summary>
+
+                        <div class="grid-container">
+
+                            <div class="date">
+                                <p> Jan 11 2025 </p>
+                            </div>
+                        
+                            <div class="title">
+                                <p> I Do, (G)I-DLE </p>
+                            </div>
+
+                            <div class="feel">
+                                <p> heartbreak </p>
+                            </div>
+
+                            <div class="submit">
+                                <p> anon </p>
+                            </div>
+
+                        </div> 
+
+                    </summary>
+
+            
+                    <div class="collapse-content">
+
+                        <div class="collapse-text">
+                            <p>
+                                "It’s basically a song that talks about a breakup. Basically I was going through — not a break up — but a break up with this guy. I was really really sad. Because, I don’t know, I thought he was my soulmate but he wasn’t. But I don’t know, I just felt really, really sad, and it just so happened to—cause we were in Calgary together for a trip. And then, that’s where we met and whatever. And then we had to leave, and he lives in Quebec, and I live in Toronto, so it wasn’t gonna happen. And then this song happened to come on right as I was leaving for the airport and I was crying. And when I started listening to this song it really helped me because, I don’t know, it was just talking about the things that people in break ups go through, and that’s why I like this song. It’s very meaningful. I was listening to it — I was crying to it — every single day for the following week and just screaming the lyrics to the song.
+                                "
+                            </p>
+                        </div>
+                        
+                        <div class="music">
+                            <iframe style="padding: 50px 0px 0px 0px" style="border-radius:12px" height="150vw" width="250vw" src="https://www.youtube.com/embed/Jn3QQbEona4?si=VycuFtyrjSbDwTG9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe style="padding-top: 30px; padding-bottom: 100px; border-radius:12px" src="https://open.spotify.com/embed/track/23z04slx9PgvUYCOKkd27X?utm_source=generator" width="250vw" height="100vw" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+
+                    </div>
+                
+                </details>
+            </div>
+
+            <div class="index-entry">
+                <details>
+                    <summary>
+
+                        <div class="grid-container">
+
+                            <div class="date">
+                                <p> Jan 11 2025 </p>
+                            </div>
+                        
+                            <div class="title">
+                                <p> 天下掉下个林妹妹, 红楼梦 [Sister Lin Falls From the Sky, Dream of the Red Mansion]
+                                </p>
+                            </div>
+
+                            <div class="feel">
+                                <p> nostalgia </p>
+                            </div>
+
+                            <div class="submit">
+                                <p> anon </p>
+                            </div>
+
+                        </div> 
+
+                    </summary>
+
+            
+                    <div class="collapse-content">
+
+                        <div class="collapse-text">
+                            <p>
+                                "我听到这首歌就会想到我以前家的厨房。在那个厨房里面，是烧柴火的。就是用外面剪的树枝烧火的底下做饭。上面有个锅。然后我要把那些柴塞到底下。这样你奶奶才能做饭。然后热气腾腾的做饭。然后这个灶的旁边是放着一个鸡的笼子。就是鸡就躲在旁边，晚上会回家就是住在那里。然后这个笼子的旁边，有个台子上面搭这个窝给母鸡扶那个鸡蛋，孵出小鸡来。她在扶小鸡的时候你去碰她她会咬你的手，因为他要保护她的小鸡。然后你的爷爷那个时候，在那里旁边—洗那个咸菜。因为一边是做那个午饭，那个真正的，用锅里煮的。他要洗咸菜，一边洗咸菜一边就会唱那个歌。在一个很脏很乱，地上都是泥土的一个房间里。很小的一个房间。"
+                            </p>
+                            <br>
+                            <p>
+                                "When I hear this song I immediately think of the kitchen in my old home. Inside that kitchen was a firewood burner. It used branches cut from outside to stoke the fire and you’d cook below it. It was only like this that your grandma could cook. And you would cook alongside hot steam. And then next to this stove was a chicken cage. That is, the chickens would hide to the side—they’d come back at night and live there. And next to the cage there was a platform with a nest for the hen to raise eggs and hatch chicks. If you touched her, she would bite your hand because she wanted to protect her chicks. And your grandpa at the time, would be next to them washing pickled vegetables. Because to one side was the place for making lunch—the proper kind, with a pot. He needed to wash the vegetables, and while he washed them he would sing that song. In a very dirty and messy room, where the ground was all dirt. A room that was very small.
+                                "
+                            </p>
+                        </div>
+                        
+                        <div class="music">
+                            <iframe style="padding: 50px 0px 0px 0px" style="border-radius:12px" height="150vw" width="250vw" src="https://www.youtube.com/embed/DmeXdUjHGeY?si=LU2JXLCm8S4ebWzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe style="padding-top: 30px; padding-bottom: 100px; border-radius:12px" src="https://open.spotify.com/embed/track/1yudRzrk8qOacVMxm0wHxi?utm_source=generator" width="250vw" height="100vw" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+
+                    </div>
+                
+                </details>
+            </div>
+
+            <div class="index-entry">
+                <details>
+                    <summary>
+
+                        <div class="grid-container">
+
+                            <div class="date">
+                                <p> Jan 11 2025 </p>
+                            </div>
+                        
+                            <div class="title">
+                                <p> Nude, Radiohead </p>
+                            </div>
+
+                            <div class="feel">
+                                <p> heartbreak </p>
+                            </div>
+
+                            <div class="submit">
+                                <p> anon </p>
+                            </div>
+
+                        </div> 
+
+                    </summary>
+
+            
+                    <div class="collapse-content">
+
+                        <div class="collapse-text">
+                            <p>
+                                "I think it’s just because the overall soundscape of the song coupled with the lyrics—it’s just, it’s simultaneously so beautiful but it’s also so soul-crushing, and, I don’t know. I found this song when I had a pretty bad breakup so it’s forever attached to that time in my life. But now even though I’m happy, I listen to it because it’s just such a beautiful song. I love how the beginning and ending are the same—they’re just reversed. It’s just incredible."
+                            </p>
+                        </div>
+                        
+                        <div class="music">
+                            <iframe style="padding: 50px 0px 0px 0px" style="border-radius:12px" height="150vw" width="250vw" src="https://www.youtube.com/embed/k5lkEiiwVtg?si=yJP3wMQEkeY61dSD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe style="padding-top: 30px; padding-bottom: 100px; border-radius:12px" src="https://open.spotify.com/embed/track/1yudRzrk8qOacVMxm0wHxi?utm_source=generator" width="250vw" height="100vw" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+
+                    </div>
+                
+                </details>
+            </div>
+
+            <div class="index-entry">
+                <details>
+                    <summary>
+
+                        <div class="grid-container">
+
+                            <div class="date">
+                                <p> Jan 11 2025 </p>
+                            </div>
+                        
+                            <div class="title">
+                                <p> The Man Who Sees Tomorrow, Uwade </p>
+                            </div>
+
+                            <div class="feel">
+                                <p> homesick </p>
+                            </div>
+
+                            <div class="submit">
+                                <p> anon </p>
+                            </div>
+
+                        </div> 
+
+                    </summary>
+
+            
+                    <div class="collapse-content">
+
+                        <div class="collapse-text">
+                            <p>
+                                "It’s like a very peaceful song and I like listening to it maybe when I’m feeling down or if I’m homesick or something; it just makes me feel better."
+                            </p>
+                        </div>
+                        
+                        <div class="music">
+                            <iframe style="padding: 50px 0px 0px 0px" style="border-radius:12px" height="150vw" width="250vw" src="https://www.youtube.com/embed/PvVBdM8APOI?si=gw1w0g841XaxBi-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe style="padding-top: 30px; padding-bottom: 100px; border-radius:12px" src="https://open.spotify.com/embed/track/3tML0isKJJ3DJUQKcm3L0e?utm_source=generator" width="250vw" height="100vw" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+
+                    </div>
+                
+                </details>
+            </div>
+
+            <div class="index-entry">
+                <details>
+                    <summary>
+
+                        <div class="grid-container">
+
+                            <div class="date">
+                                <p> Jan 11 2025 </p>
+                            </div>
+                        
+                            <div class="title">
+                                <p> Everything Goes On, Porter Robinson </p>
+                            </div>
+
+                            <div class="feel">
+                                <p> low on energy </p>
+                            </div>
+
+                            <div class="submit">
+                                <p> anon </p>
+                            </div>
+
+                        </div> 
+
+                    </summary>
+
+            
+                    <div class="collapse-content">
+
+                        <div class="collapse-text">
+                            <p>
+                                "The song is—well, it was made in collaboration with the game League of Legends. The storyline of the song is basically focused on this character whose partner died. And she’s kind of reconciling with that fact or whatever and, I don’t know, the song is just very beautiful. Whenever I listen to it I get kind of sad, but the melody is really hopeful and I just, I don’t know, I get really pumped up when I listen to it. It’s kind of the opposite of what’s going on, but yeah."
+                            </p>
+                        </div>
+                        
+                        <div class="music">
+                            <iframe style="padding: 50px 0px 0px 0px" style="border-radius:12px" height="150vw" width="250vw" src="https://www.youtube.com/embed/izHyKdrSKvo?si=5MEjwCJcJ9sirGsW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe style="padding-top: 30px; padding-bottom: 100px; border-radius:12px" src="https://open.spotify.com/embed/track/3WBRfkOozHEsG0hbrBzwlm?utm_source=generator" width="250vw" height="100vw" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+
+                    </div>
+                
+                </details>
+            </div>
+
+            <div class="index-entry">
+                <details>
+                    <summary>
+                        
+                        <div class="grid-container">
+
+                            <div class="date">
+                                <p> Jan 11 2025 </p>
+                            </div>
+                        
+                            <div class="title">
+                                <p>  Like a Tattoo, Sade </p>
+                            </div>
+
+                            <div class="feel">
+                                <p> like you miss your mom </p>
+                            </div>
+
+                            <div class="submit">
+                                <p> anon </p>
+                            </div>
+
+                        </div> 
+
+                    </summary>
+
+                    <div class="collapse-content">
+
+                        <div class="collapse-text">
+                            <p>
+                                "My mom listened to it a lot when she was taking care of me when I was, like, a little child. So it just reminds me of her comfort."
+                            </p>
+                        </div>
+                        
+                        <div class="music">
+                            <iframe style="padding: 50px 0px 0px 0px" style="border-radius:12px" height="150vw" width="250vw" src="https://www.youtube.com/embed/Xl-GufZCQoo?si=F9S-UmR2fbveZzoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe style="padding-top: 30px; padding-bottom: 100px; border-radius:12px" src="https://open.spotify.com/embed/track/4PEGwWH4tL6H7dGl4uVSPg?utm_source=generator" width="250vw" height="100vw" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+
+                    </div>
+                </details>
+            </div>
+
+            <div class="index-entry">
+                <details>
+                    <summary>
+                        
+                        <div class="grid-container">
+
+                            <div class="date">
+                                <p> Jan 11 2025 </p>
+                            </div>
+                        
+                            <div class="title">
+                                <p>  童话，刘大拿/刘兆宇/AFMC黑子 </p>
+                            </div>
+
+                            <div class="feel">
+                                <p> connection, depressed </p>
+                            </div>
+
+                            <div class="submit">
+                                <p> anon </p>
+                            </div>
+
+                        </div> 
+
+                    </summary>
+
+                    <div class="collapse-content">
+
+                        <div class="collapse-text">
+                            <p>
+                                "当时我在上TOFL课，然后每天都熬夜写作业啊，然后写完作业就还要跟我一个同学聊天。他当时有点depression，让后我当时也因为这事情心情不好。然后我们经常就打电话。然后发现这首歌呢，感觉他就是很治愈。他跟我们俩的经历有点相似。所以我们就经常一起听这个歌。然后到后来呢，听的太久了。每次在听这个歌真的想的当时我们聊天的种种话面。"                    
+                            </p>
+                            <br>
+                            <p>
+                                "At the time I was taking a TOFL class and staying up every night to do homework, and after doing homework I would talk to my classmate. He was kind of depressed back then, and because of this I was also unhappy. We would often call each other. And then we discovered this song that we felt was very healing—it had many similarities to our own experience. Because of that, we would often listen to it together. After everything was over, it felt like I had listened to it too many times. Everytime I hear this song now I recall the things we talked about."
+                            </p>
+                        </div>
+                        
+                        <div class="music">
+                            <iframe style="padding: 50px 0px 0px 0px" style="border-radius:12px" height="150vw" width="250vw" src="https://www.youtube.com/embed/y43gfW-nGcc?si=QoQR0zA24nEKFgDb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe style="padding-top: 30px; padding-bottom: 100px" src="https://open.spotify.com/embed/track/3LhZ5z6Y9FJV6GSetJj4Kg?utm_source=generator" width="250vw" height="100vw" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+
+                    </div>
+                </details>
+            </div>
+
+            <div class="index-entry">
+                <details>
+                    <summary>
+
+                        <div class="grid-container">
+
+                            <div class="date">
+                                <p> Jan 11 2025 </p>
+                            </div>
+                        
+                            <div class="title">
+                                <p> Once More to See You, Mitski </p>
+                            </div>
+
+                            <div class="feel">
+                                <p> not like yourself, needing comfort </p>
+                            </div>
+
+                            <div class="submit">
+                                <p> anon </p>
+                            </div>
+
+                        </div> 
+
+                    </summary>
+
+            
+                    <div class="collapse-content">
+
+                        <div class="collapse-text">
+                            <p>
+                                “I feel like throughout my life—no matter what age I’ve been and what’s going on in my life— ever since I discovered this song, it’s one song that will always soothe me and bring me comfort, and make me feel like myself. Because I feel like I associate that song with who I am in my core—that’s something really meaningful because it always grounds me. And it sounds good no matter how many times I listen to it, and it’s been my top song on Spotify for like five years in a row. But I still, like, love it.”
+                            </p>
+                        </div>
+                        
+                        <div class="music">
+                            <iframe style="padding: 50px 0px 0px 0px" style="border-radius:12px" height="150vw" width="250vw" src="https://www.youtube.com/embed/WFLLdv0uCK8?si=4M7PGJLj5xAaY_dg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe style="padding-top: 30px; padding-bottom: 100px" style="padding-top: 30px; padding-bottom: 100px; border-radius:12px" src="https://open.spotify.com/embed/track/3NE5nGm06kB8QQbQqJaOke?utm_source=generator&theme=0" width="250vw" height="100vw" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+
+                    </div>
+                
+                </details>
+            </div>
+
+            <footer>
+                <p> Made by Jade Sun. Last updated Jan 2025.</p>
+            </footer>
+        </div>
+       
   </body>
 </html>
